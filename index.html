@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <script src="assets/js/glider-compat.min.js"></script>
+    <script src="assets/js/glider.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <section id="carrossel-imoveis">
+    
+    <button role="button" aria-label="Previous" class="seta-botao esquerda" id="glider-ant"><i class="setaa"></i></button>
+    <div id="fundo" class="">
+      <div class="glid-contain centro">
+        <div class="glid">
+          <div id='aaa' class="todos todos0"></div>
+          <div class="todos1 todos"></div>
+          <div class="todos2 todos"></div>
+          <div class="todos3 todos"></div>
+          <div class="todos4 todos"></div>
+          <div class="todos5 todos"></div>
+          <div class="todos6 todos"></div>
+          <div class="todos7 todos"></div>
+          <div class="todos8 todos"></div>
+          <div class="todos9 todos"></div>
+
+        </div>
+      
+        <button aria-label="Previous" id='ant' class="some glid-prev">«</button>
+        <button aria-label="Next" id='prox' class="some glid-next">»</button>
+      </div>
+  </div>
+ 
+
+  <div id="diva" class="demo  persp">
+          <div id="" data-name="Perspective View" class="glider-contain vai multiple">
+            
+            <div class="glider junta glider-persp " id="glider-persp">
+              <div class="c1"><div  class="altura"><h1 ></h1></div></div>
+              <div><div class="altura"><h1>INICIAL</h1></div></div>
+              <div><div id="casas" class="altura"><h1 >CASAS</h1></div></div>
+              <div><div id="terrenos" class="altura"><h1>TERRENOS</h1></div></div>
+              <div><div id="apartamentos" class="altura"><h1>APARTAMENTOS</h1></div></div>
+              <div><div id="comerciais" class="altura"><h1>COMERCIAIS</h1></div></div>
+              <div><div class="altura"><h1>FINAL</h1></div></div>
+              <div><div class="altura"><h1>FINAL</h1></div></div>
+            </div>
+            <div id="dots-per"></div>
+          </div>
+    <button role="button" aria-label="Next" class="seta-botao direita" id="glider-prox"><i class="setaa"></i></button>
+      </section>
+      <section id="locals">        
+
+          <div id="glider_maps" class="">
+            <div id="contenha" class="glider-contain">
+             <p class="texto1">Confira alguns imóveis especiais, com a segurança de sempre❤</p>
+
+              <div class="gli full">    
+                <div class="principal_locals"><a href="https://www.google.com/maps/d/embed?mid=14ChWw9GLZwdN_gseHSCePiJaEN0wluA&ehbc=2E312F" target="iframe1"><div class=" casas image_circle"></div></a><br><p class="texto">Todos</p></div>
+                <div class="principal_locals"><a href="https://www.google.com/maps/d/embed?mid=1BM5VldniHuI7AM4Kf2sN4e8i0Qpacl4&ehbc=2E312F" target="iframe1"><div class=" casas image_circle"></div></a><br><p class="texto">Casas</p></div>
+                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
+                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
+                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
+                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
+                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
+                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
+                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
+                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
+        
+              </div>
+            
+              
+              <div role="tablist" class="dots1"></div>
+            </div>
+          </div>
+          <hr>
+          <iframe id="iframe1" name="iframe1" src="https://www.google.com/maps/d/embed?mid=14ChWw9GLZwdN_gseHSCePiJaEN0wluA&ehbc=2E312F"></iframe>
+      </section>
+          <script>
+            new Glider(document.querySelector('.glid'), {
+              slidesToShow: 1,
+              draggable: false,
+              rewind: true,
+              arrows: {
+                prev: '.glid-prev',
+                next: '.glid-next'
+              }
+            });
+
+            window.addEventListener('load', function () {
+            new Glider(document.querySelector('.gli'), {
+              slidesToShow: 8,
+              draggable: true,
+              itemWidth: 1,
+              dots: '.dots1',
+              arrows: {
+                prev: '.gli-prev',
+                next: '.gli-next'
+              }
+            });
+          });
+            window.addEventListener('load', function () {
+              window.glides = new Glider(document.getElementById('glider-persp'), {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                itemWidth: 500,
+                draggable: true,
+                dots: '#dots-per',
+                arrows: {
+                  prev: '#glider-ant',
+                  next: '#glider-prox'
+                },
+                
+              })
+            });
+            
+
+          </script>
+       
+    </div>
+    <script>
+      proximo(0);
+      function proximo(a){
+        if(a){
+        document.querySelector('#prox').click();
+      }
+        setTimeout(() => {proximo(1)}, 10000);
+      }
+
+    </script>
+    <script>
+
+         window.addEventListener('load', function () {
+          
+        const x = ["casas", "apartamentos", "terrenos", "sítios", 'fazendas'];
+        troca = 'todos';
+        setTimeout(() => {slidess(troca)}, 5000);
+        function slidess(troca){
+        ui = troca;
+        conteudo = document.querySelectorAll('.center')[1];
+        a = conteudo.firstChild.id;
+        for(i = 0, len = x.length, text = ""; i < len; i++){
+          
+          if((a == x[i]) && (a!=troca)){
+            ui = a;
+            for(j = 0; j<=9; j++ ){
+            
+            
+            stringo = j.toString();
+
+            
+            var slides1 = document.querySelectorAll('.todos');
+
+            slides1[j].classList.replace(troca+stringo, x[i]+stringo);
+            
+
+            
+          }
+          troca = a;
+          
+
+            
+          }
+        }
+        setTimeout(() => {slidess(ui)}, 500);
+      }
+
+      });
+
+
+        
+        </script>
+</body>
+</html>
