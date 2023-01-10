@@ -3873,12 +3873,15 @@ input, select, textarea {
   }
   .glider-contain.content {width: 100%;}
   .glider-slide {
-  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   
   border-bottom: 0;
+  }
+  .minimo_height{
+    min-height: 300px;
+
   }
   .multiple .glider-slide {
   min-height: 150px;
@@ -4120,7 +4123,7 @@ input, select, textarea {
   margin-top: 15px;
   }
   .glider-contain {
-  margin-bottom: 25px;
+  margin-bottom: 0;
   }
   .glider-slide {
   

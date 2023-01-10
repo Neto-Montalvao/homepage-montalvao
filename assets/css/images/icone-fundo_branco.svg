@@ -1,0 +1,46 @@
+<svg width="2381" height="2381" viewBox="0 0 2381 2381" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_33_9)">
+<g clip-path="url(#clip0_33_9)">
+<path d="M2377 1189.33C2377 534.042 1845.79 2.82837 1190.5 2.82837C535.214 2.82837 4 534.042 4 1189.33C4 1844.62 535.214 2375.83 1190.5 2375.83C1845.79 2375.83 2377 1844.62 2377 1189.33Z" fill="white"/>
+<path d="M2374 -44H7V257H1041.88L1190.5 1L1339.12 257H2374V-44Z" fill="#DB241C"/>
+<path d="M2038.25 356.37H1397.4L1445 438.37C1705.28 438.37 1851.21 438.4 2111.49 438.4C2099 422 2038.25 356.37 2038.25 356.37Z" fill="#DB241C"/>
+<path d="M343.33 356.37H984.18L936.58 438.37C676.295 438.37 530.374 438.4 270.09 438.4C282.58 422 343.33 356.37 343.33 356.37Z" fill="#DB241C"/>
+<path d="M875.805 543.05H127.096V644.87H816.695L875.805 543.05Z" fill="#DB241C"/>
+<path d="M1505.19 543.05H2253.9V644.87H1564.3L1505.19 543.05Z" fill="#DB241C"/>
+<path d="M2374 894H1523V998H2374V894Z" fill="#DB241C"/>
+<path d="M849 894H7V998H849V894Z" fill="#DB241C"/>
+<path d="M722 1100H7V1167H722V1100Z" fill="#DB241C"/>
+<path d="M2374 1100H1697V1167H2374V1100Z" fill="#DB241C"/>
+<path d="M2371 1261H1776V1295H2371V1261Z" fill="#DB241C"/>
+<path d="M606 1261H4V1295H606V1261Z" fill="#DB241C"/>
+<path d="M503 1465H7V1536H503V1465Z" fill="#DB241C"/>
+<path d="M2374 1465H1903V1536H2374V1465Z" fill="#DB241C"/>
+<path d="M2371.34 2042.08H4V2105.72H2371.34V2042.08Z" fill="#DB241C"/>
+<path d="M2374.17 1879.45H6.82812V1916.22H2374.17V1879.45Z" fill="#DB241C"/>
+<path d="M2374 738H1593V805H2374V738Z" fill="#DB241C"/>
+<path d="M762.02 738H7V805H762L762.02 738Z" fill="#DB241C"/>
+<path d="M2374.17 2213.2H6.82812V2392.8H2374.17V2213.2Z" fill="#DB241C"/>
+<path d="M2371.34 1879.7H4V1916.26H2371.34V1879.7Z" fill="#DB241C"/>
+<path d="M1190.5 1402.07L1597.5 701L1711.5 898.5L1202 1775L1190.5 1402.07Z" fill="#DB241C"/>
+<path d="M783.921 1094.9C783.921 1094.9 1177.38 1773.14 1178.38 1774.64C1179.38 1776.14 1292.38 1577.14 1292.38 1577.14L783.5 701L783.921 1094.9Z" fill="#DB241C"/>
+<path d="M1584.68 1073.93L1993 1775L2221 1775L1597.5 701L1584.68 1073.93Z" fill="#DB241C"/>
+<path d="M796.321 1073.93L387.999 1775L159.999 1775L783.499 701L796.321 1073.93Z" fill="#DB241C"/>
+<path d="M1190.5 1795L1141.57 1710.25H1239.43L1190.5 1795Z" fill="#DB241C"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_33_9" x="0" y="0" width="2381" height="2381" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_33_9"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_33_9" result="shape"/>
+</filter>
+<clipPath id="clip0_33_9">
+<rect x="4" width="2373" height="2373" rx="1186.5" fill="white"/>
+</clipPath>
+</defs>
+</svg>

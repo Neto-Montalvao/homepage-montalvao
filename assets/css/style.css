@@ -11,8 +11,15 @@
       .right-1, .left-1{
         scale: 0.8;
       }
+
+      
+      .glid-contain{
+        width: 100%;
+        height: 100%;
+      }
+      
+
     .altura{
-      background-image: url('https://media.istockphoto.com/id/1294603953/pt/vetorial/abstract-black-stripes-diagonal-background.jpg?s=612x612&w=0&k=20&c=5SwhJn0UyAy3CqdV3eQTb8xbOfstY8JniWvfsdIvXGE=');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -29,20 +36,20 @@
       
     }
     #dots-per{
-      margin-top: -7px;
+      margin-top: -15px;
+      margin-bottom: 0;
     }
 
-    #junta{
-      margin-bottom: -1vh;
+    .dots1{
+      margin: 0;
     }
     #fundo{
-      z-index: -1;
+      z-index: -2;
       width: 100%;
-      height: 150vh;
+      height: 39vh;
       margin-top: 1px;
-      margin-bottom: -150vh;
-      left: 0px;
-      top: 0;
+      margin-bottom: -39vh;
+      top: 1;
     }
 
 
@@ -51,16 +58,20 @@
       top: 0;
       z-index: 1;
       margin-top: 0px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       width: 100%;
     }
-    
+    .fica_normal{
+      overflow: hidden;
+    }
     .full{
       width: 100%;
       height: 100%;
     }
 
     #iframe1{
+      margin-top: 4vh;
+      border-radius: 5px;
       width: 100%;
       height: 80vh;
     }
@@ -75,32 +86,40 @@
     }
 
     .glider-contain#contenha{
-      height: 16vh;
+      height: 19vh;
+      width: 100%;
     }
 
   #locals{
-    padding: 10vh 0 10vh 0;
+    margin-top: 0;
+    position: relative;
+    padding: 0 10vw 0 10vw;
     background-color: rgb(246, 252, 251);
     width: 100%;
-    height: 100vh;
+    height: 120vh;
+  }
+
+  #glider_maps{
+    width: 100%;
   }
     .image_circle{
-      width: 13vh;
-      height: 13vh;
+      width: 6vw;
+      height: 6vw;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 100%;
-      margin: auto;
+      margin: auto auto 0.01px auto;
 
     }
 
 .texto{
-      margin-top: -5vh;
+      margin-top: 0;
+      top: 0;
       font-family: 'Inter';
       font-style: normal;
       font-weight: 400;
-      font-size: 2vh;
+      font-size: 0.95vw;
       text-align: center;
       color: #000000;
 }
@@ -109,15 +128,17 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1.3vw;
   text-align: center;
   color: #000000;
 }
 
     .casas{
-      background-image: url('images/loc-casas.png');
+      background-image: url('images/1_2023-01-02_16-10-02_screenshot.jpg');
     }
-
+    .todos_imoveis{
+      background-image: url('images/icone-fundo_branco.svg');
+    }
     .todos{
       background-position: center;
       background-repeat: no-repeat;
@@ -128,12 +149,7 @@
     }
     .todos0{
       background-image: url("https://montalvaoimoveis.com.br/img/logo-montalvao.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      width: 100%;
-      height: 100%;
+
     }
     .todos1{
       background-image: url("https://portalclique.com/wp-content/uploads/2015/10/cor-violeta.jpg");
@@ -237,48 +253,139 @@
       background-color: red;
     }
 .setaa {
-width: 80%;
-height: 100%;
-border: solid rgb(255, 255, 255);
+width: 100%;
+height: 60%;
+border: solid rgb(255, 0, 0);
 border-width: 0 3px 3px 0;
 display: inline-block;
 padding: 3px;
-background-image: url();
 }
 
 
 .seta-botao{
+border-radius: 100%;
 width: 2vw;
-height: 2vh;
+height: 2vw;
 border: none;
-position: relative;
-margin-top: 20vh;
 background-color: transparent;
+
 }
+
+.vermelho{
+  color: #DB241C;
+}
+
 .gli{
-  width: 100%;
-  height: 100%;
+  z-index: 0;
+  position: relative;
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-left: 0;
+  margin-right: 0;
+  width: 90%;
 }
-.direita {
-right: 0vw;
-margin-left: -50vh;
-float: right;
-transform: rotate(-45deg);
--webkit-transform: rotate(-45deg);
+
+
+.direita_icone{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.glider-track#principal-locals{
+  height: 17vh;
+}
+
+.glider-persp .glider-track{
+  height: auto;
+}
+
+.glid .glider-track{
+  height: auto;
+}
+.glider-persp{
+  height: 40vh;
+}
+.seta-botao:hover{
+  background-color: #ddb2b0;
+  
+}
+
+#glider-prox, #glider-ant{
+  z-index: 2;
+  margin-top: 400%;
+
+}
+
+#glider-prox{
+  right: -3vw;
+}
+#glider-ant{
+  left: -3vw;
+}
+
+#gli-next, #gli-prev{
+  margin-top: 100%; 
+
 }
 
 .esquerda {
-margin-right: -50vh;
-left: -7vw;
 float: left;
-transform: rotate(135deg);
--webkit-transform: rotate(135deg);
+left: 0;
 }
+.direita{
+  float: right;
+  right: 0;
+}
+
+.esquerda_icone{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.esquerda_gli{
+  float: left;
+  height: 100%;
+  z-index: 2;
+}
+
+.direita_gli{
+  float: right;
+  height: 100%;
+  z-index: 2;
+  }
+
+
+
+.esquerda_glider{
+  float: left;
+  height: 20vh;
+  top: 0;
+  z-index: 2;
+
+}
+.direita_glider{
+  float: right;
+  height: 20vh;
+  top: 0;
+  z-index: 2;
+
+  }
+  
 .principal_locals{
-  display: block;
+  top: 0;
+  display: block ;
   scale: 1;
-  padding: 0%;
+  padding: 0;
+  height: 12vw;
 }
 .tamanho{
   scale: 1;
 }
+
+
+/*##############################################################################################################*/
+
+/*                                SUPER-CARROSSEL                                                               */
+
+/*##############################################################################################################*/
+

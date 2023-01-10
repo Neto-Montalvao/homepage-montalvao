@@ -8,27 +8,28 @@
     <script src="assets/js/glider-compat.min.js"></script>
     <script src="assets/js/glider.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/supers.css"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   </head>
 <body>
-  <section id="carrossel-imoveis">
+  <section id="carrossel-imoveis fica_normal">
     
-    <button role="button" aria-label="Previous" class="seta-botao esquerda" id="glider-ant"><i class="setaa"></i></button>
     <div id="fundo" class="">
       <div class="glid-contain centro">
         <div class="glid">
           <div id='aaa' class="todos todos0"></div>
-          <div class="todos1 todos"></div>
-          <div class="todos2 todos"></div>
-          <div class="todos3 todos"></div>
-          <div class="todos4 todos"></div>
-          <div class="todos5 todos"></div>
-          <div class="todos6 todos"></div>
-          <div class="todos7 todos"></div>
-          <div class="todos8 todos"></div>
-          <div class="todos9 todos"></div>
+          <div class="todos1 minimo_height todos"></div>
+          <div class="todos2 minimo_height todos"></div>
+          <div class="todos3 minimo_height todos"></div>
+          <div class="todos4 minimo_height todos"></div>
+          <div class="todos5 minimo_height todos"></div>
+          <div class="todos6 minimo_height todos"></div>
+          <div class="todos7 minimo_height todos"></div>
+          <div class="todos8 minimo_height todos"></div>
+          <div class="todos9 minimo_height todos"></div>
 
         </div>
       
@@ -36,94 +37,314 @@
         <button aria-label="Next" id='prox' class="some glid-next">»</button>
       </div>
   </div>
- 
+  <script>
+    new Glider(document.querySelector('.glid'), {
+      slidesToShow: 1,
+      draggable: false,
+      rewind: true,
+      arrows: {
+        prev: '.glid-prev',
+        next: '.glid-next'
+      }
+    });
+  </script>
 
   <div id="diva" class="demo  persp">
           <div id="" data-name="Perspective View" class="glider-contain vai multiple">
-            
-            <div class="glider junta glider-persp " id="glider-persp">
+            <div class="esquerda_glider">
+              <button role="button" aria-label="Previous1" class="seta-botao " id="glider-ant"><i class="esquerda_icone setaa"></i></button>
+            </div>
+            <div class="direita_glider">
+              <button role="button" aria-label="Next1" class="seta-botao" id="glider-prox"><i class="direita_icone setaa"></i></button>
+            </div>
+            <div class="glider glider-persp " id="glider-persp">
               <div class="c1"><div  class="altura"><h1 ></h1></div></div>
               <div><div class="altura"><h1>INICIAL</h1></div></div>
-              <div><div id="casas" class="altura"><h1 >CASAS</h1></div></div>
+              <div><div id="casas" class="altura casas"><h1 >CASAS</h1></div></div>
               <div><div id="terrenos" class="altura"><h1>TERRENOS</h1></div></div>
               <div><div id="apartamentos" class="altura"><h1>APARTAMENTOS</h1></div></div>
               <div><div id="comerciais" class="altura"><h1>COMERCIAIS</h1></div></div>
               <div><div class="altura"><h1>FINAL</h1></div></div>
               <div><div class="altura"><h1>FINAL</h1></div></div>
             </div>
-            <div id="dots-per"></div>
+            <div id="dots-per"></div> 
+
           </div>
-    <button role="button" aria-label="Next" class="seta-botao direita" id="glider-prox"><i class="setaa"></i></button>
-      </section>
-      <section id="locals">        
-
-          <div id="glider_maps" class="">
-            <div id="contenha" class="glider-contain">
-             <p class="texto1">Confira alguns imóveis especiais, com a segurança de sempre❤</p>
-
-              <div class="gli full">    
-                <div class="principal_locals"><a href="https://www.google.com/maps/d/embed?mid=14ChWw9GLZwdN_gseHSCePiJaEN0wluA&ehbc=2E312F" target="iframe1"><div class=" casas image_circle"></div></a><br><p class="texto">Todos</p></div>
-                <div class="principal_locals"><a href="https://www.google.com/maps/d/embed?mid=1BM5VldniHuI7AM4Kf2sN4e8i0Qpacl4&ehbc=2E312F" target="iframe1"><div class=" casas image_circle"></div></a><br><p class="texto">Casas</p></div>
-                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
-                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
-                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
-                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
-                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
-                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
-                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
-                <div class="principal_locals"><div class=" casas image_circle"></div><br><p class="texto">Casas</p></div>
-        
-              </div>
-            
-              
-              <div role="tablist" class="dots1"></div>
-            </div>
-          </div>
-          <hr>
-          <iframe id="iframe1" name="iframe1" src="https://www.google.com/maps/d/embed?mid=14ChWw9GLZwdN_gseHSCePiJaEN0wluA&ehbc=2E312F"></iframe>
-      </section>
-          <script>
-            new Glider(document.querySelector('.glid'), {
-              slidesToShow: 1,
-              draggable: false,
-              rewind: true,
-              arrows: {
-                prev: '.glid-prev',
-                next: '.glid-next'
-              }
-            });
-
-            window.addEventListener('load', function () {
-            new Glider(document.querySelector('.gli'), {
-              slidesToShow: 8,
+        </div>
+        <script>
+          window.addEventListener('load', function () {
+            window.glides = new Glider(document.getElementById('glider-persp'), {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              itemWidth: 500,
               draggable: true,
-              itemWidth: 1,
-              dots: '.dots1',
+              dots: '#dots-per',
               arrows: {
-                prev: '.gli-prev',
-                next: '.gli-next'
-              }
-            });
+                prev: '#glider-ant',
+                next: '#glider-prox'
+              },
+              
+            })
           });
-            window.addEventListener('load', function () {
-              window.glides = new Glider(document.getElementById('glider-persp'), {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                itemWidth: 500,
-                draggable: true,
-                dots: '#dots-per',
-                arrows: {
-                  prev: '#glider-ant',
-                  next: '#glider-prox'
-                },
-                
-              })
-            });
-            
+        </script>
+      </section>
+      <section class="fica_normal" id="locals">        
 
+            <div id="contenha" class="glider_maps glider-contain">
+             <p class="texto1">Confira alguns imóveis especiais, com a segurança de sempre 
+              <svg width="20" height="18" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.416 0C16.3398 0 14.08 3.04696 14.08 3.04696C14.08 3.04696 11.8202 0 7.744 0C3.4665 0 0 3.58929 0 8.01831C0 14.0991 6.9161 19.9918 8.84365 21.8535C11.0641 23.9966 14.08 26.752 14.08 26.752C14.08 26.752 17.0959 23.9966 19.3164 21.8535C21.2439 19.9918 28.16 14.0991 28.16 8.01831C28.16 3.58929 24.6935 0 20.416 0Z" fill="#DB241C"/>
+              </svg>
+              </p>
+              <div  class=" full">
+                <div class="esquerda_gli">
+                  <button role="button" aria-label="Previous1" class="seta-botao " id="gli-prev"><i class="esquerda_icone setaa"></i></button>
+                </div>
+                <div class="direita_gli">
+                  <button role="button" aria-label="Next1" class="seta-botao" id="gli-next"><i class="direita_icone setaa"></i></button>
+                </div>
+                <div class="gli"> 
+                  <div class="principal_locals"><a href="https://www.google.com/maps/d/embed?mid=14ChWw9GLZwdN_gseHSCePiJaEN0wluA&ehbc=2E312F" target="iframe1"><div class=" todos_imoveis image_circle"></div></a><p class="texto">Todos</p></div>
+                  <div class="principal_locals"><a href="https://www.google.com/maps/d/embed?mid=1BM5VldniHuI7AM4Kf2sN4e8i0Qpacl4&ehbc=2E312F" target="iframe1"><div class=" casas image_circle"></div></a><p class="texto">Casas</p></div>
+                  <div class="principal_locals"><div class=" apartamentos image_circle"></div><p class="texto">Casas</p></div>
+                  <div class="principal_locals"><div class=" terrenos image_circle"></div><p class="texto">Casas</p></div>
+                  <div class="principal_locals"><div class=" casas image_circle"></div><p class="texto">Casas</p></div>
+                  <div class="principal_locals"><div class=" casas image_circle"></div><p class="texto">Casas</p></div>
+                  <div class="principal_locals"><div class=" casas image_circle"></div><p class="texto">Casas</p></div>
+                  <div class="principal_locals"><div class=" casas image_circle"></div><p class="texto">Casas</p></div>
+                  <div class="principal_locals"><div class=" casas image_circle"></div><p class="texto">Casas</p></div>
+                  <div class="principal_locals"><div class=" casas image_circle"></div><p class="texto">Casas</p></div>
+
+                </div>
+                <div role="tablist" class="dots1"></div>
+              </div>
+            </div>
+            
+          <hr>
+          <iframe id="iframe1" name="iframe1" src="iframe.html"></iframe>
+          <script>
+            
+              window.addEventListener('load', function () {
+              new Glider(document.querySelector('.gli'), {
+                slidesToShow: 8,
+                draggable: true,
+                itemWidth: 1,
+                dots: '.dots1',
+                arrows: {
+                  prev: '#gli-prev',
+                  next: '#gli-next'
+                }
+              });
+            });
           </script>
-       
+      </section>
+
+<section class="fica_normal imoveis-section" id="casas-section">
+  <div class="esquerda_sup esquerda">
+    <button role="button" aria-label="Previous1" class="seta-botao sub-botao casas-sup-prev"><i class="esquerda_icone setaa"></i></button>
+  </div>
+  <div class="direita_sup direita">
+    <button role="button" aria-label="Next1" class="seta-botao sub-botao casas-sup-next"><i class="direita_icone setaa"></i></button>
+  </div>
+<div class="glider-sup-casas">
+    <div id="principal" class="sup casas-sub1">
+      <h1 class="casas-texto">Casas | Título</h1>
+      
+          <div class="glider-sub-casas">
+
+
+              <div id="secundária" class="sub">
+                <div id="" class="esquerda-s sub_div div-tabela">
+                  <table class="tabela-s">
+                    <thead>
+                      <th>Geral</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td> <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="direita-s casas-sub1 sub_div slide-sub">
+                  <div class="esquerda_sub esquerda">
+                    <button role="button" aria-label="Previous1" class="seta-botao sub-botao casas-sub-prev"><i class="esquerda_icone setaa"></i></button>
+                  </div>
+                  <div class="direita_sub direita">
+                    <button role="button" aria-label="Next1" class="seta-botao sub-botao casas-sub-next"><i class="direita_icone setaa"></i></button>
+                  </div>
+                </div> 
+              </div>
+
+
+              <div id="secundária2" class="sub">
+                <div id="" class="esquerda-s sub_div div-tabela">
+                  <table class="tabela-s">
+                    <thead>
+                      <th>Geral</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2</td> <td>2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="direita-s casas-sub2 sub_div slide-sub">
+                  <div class="esquerda_sub esquerda">
+                    <button role="button" onclick="botao('.casas-sub-prev')" aria-label="Previous1" class="seta-botao sub-botao casas-sub-prev"><i class="esquerda_icone setaa"></i></button>
+                  </div>
+                  <div class="direita_sub direita">
+                    <button role="button" onclick="botao('.casas-sub-next')" aria-label="Next1" class="seta-botao sub-botao casas-sub-next"><i class="direita_icone setaa"></i></button>
+                  </div>
+                </div> 
+              </div>
+              
+
+
+              <div id="secundária3" class="sub">
+                <div id="" class="esquerda-s sub_div div-tabela">
+                  <table class="tabela-s">
+                    <thead>
+                      <th>Geral</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3</td> <td>3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="direita-s casas-sub3 sub_div slide-sub">
+                  <div class="esquerda_sub esquerda">
+                    <button role="button" onclick="botao('.casas-sub-prev')" aria-label="Previous1" class="seta-botao sub-botao casas-sub-prev"><i class="esquerda_icone setaa"></i></button>
+                  </div>
+                  <div class="direita_sub direita">
+                    <button role="button" onclick="botao('.casas-sub-next')" aria-label="Next1" class="seta-botao sub-botao casas-sub-next"><i class="direita_icone setaa"></i></button>
+                  </div>
+                </div> 
+              </div>
+
+
+          </div>   
     </div>
+
+
+    <div id="principal" class="sup casas-sub1">
+      <h1 class="casas-texto">Casas | Título</h1>
+          <div class="glider-sub-casas">
+
+
+              <div id="secundária" class="sub">
+                <div id="" class="esquerda-s sub_div div-tabela">
+                  <table class="tabela-s">
+                    <thead>
+                      <th>Geral</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td> <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="direita-s casas-sub1 sub_div slide-sub">
+                  <div class="esquerda_sub esquerda">
+                    <button role="button" aria-label="Previous1" class="seta-botao sub-botao casas-sub-prev"><i class="esquerda_icone setaa"></i></button>
+                  </div>
+                  <div class="direita_sub direita">
+                    <button role="button" aria-label="Next1" class="seta-botao sub-botao casas-sub-next"><i class="direita_icone setaa"></i></button>
+                  </div>
+                </div> 
+              </div>
+
+
+              <div id="secundária2" class="sub">
+                <div id="" class="esquerda-s sub_div div-tabela">
+                  <table class="tabela-s">
+                    <thead>
+                      <th>Geral</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2</td> <td>2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="direita-s casas-sub2 sub_div slide-sub">
+                  <div class="esquerda_sub esquerda">
+                    <button role="button" onclick="botao('.casas-sub-prev')" aria-label="Previous1" class="seta-botao sub-botao casas-sub-prev"><i class="esquerda_icone setaa"></i></button>
+                  </div>
+                  <div class="direita_sub direita">
+                    <button role="button" onclick="botao('.casas-sub-next')" aria-label="Next1" class="seta-botao sub-botao casas-sub-next"><i class="direita_icone setaa"></i></button>
+                  </div>
+                </div> 
+              </div>
+              
+
+
+              <div id="secundária3" class="sub">
+                <div id="" class="esquerda-s sub_div div-tabela">
+                  <table class="tabela-s">
+                    <thead>
+                      <th>Geral</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3</td> <td>3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="direita-s casas-sub3 sub_div slide-sub">
+                  <div class="esquerda_sub esquerda">
+                    <button role="button" onclick="botao('.casas-sub-prev')" aria-label="Previous1" class="seta-botao sub-botao casas-sub-prev"><i class="esquerda_icone setaa"></i></button>
+                  </div>
+                  <div class="direita_sub direita">
+                    <button role="button" onclick="botao('.casas-sub-next')" aria-label="Next1" class="seta-botao sub-botao casas-sub-next"><i class="direita_icone setaa"></i></button>
+                  </div>
+                </div> 
+              </div>
+
+
+          </div>   
+
+
+
+
+</div> 
+       <script>
+  new Glider(document.querySelector('.glider-sub-casas'), {
+      slidesToShow: 1,
+      draggable: false,
+      scrollLock: true,
+      duration: 0,
+      arrows: {
+        prev: '.casas-sub-prev',
+        next: '.casas-sub-next'
+      }
+    });
+       </script>
+  <script>
+  new Glider(document.querySelector('.glider-sup-casas'), {
+      slidesToShow: 1,
+      arrows: {
+        prev: '.casas-sup-prev',
+        next: '.casas-sup-next'
+      }
+    });
+      </script>
+
+</section>
+
+<script>
+  function botao(a){
+    document.querySelector(a).click();
+  }
+
+</script>
+    
     <script>
       proximo(0);
       function proximo(a){
@@ -140,7 +361,7 @@
           
         const x = ["casas", "apartamentos", "terrenos", "sítios", 'fazendas'];
         troca = 'todos';
-        setTimeout(() => {slidess(troca)}, 5000);
+        setTimeout(() => {slidess(troca)}, 50);
         function slidess(troca){
         ui = troca;
         conteudo = document.querySelectorAll('.center')[1];
